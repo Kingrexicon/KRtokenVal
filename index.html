@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="date" name="" value="" id="date">
+    <input type="text" name="" value="" id="text" placeholder="Token Name">
+    <input type="text" name="" value="" id="currency"
+     placeholder="Currency">
+    <button>Serch based on date</button>
+    <div id="return"></div>
+    <h2></h2>
+    <!-- <div id="date"></div> -->
+<table>
+    
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AED</td>
+                            <td>United Arab Emirates Dirham</td>
+                        </tr>
+                        <tr>
+                            <td>AFN</td>
+                            <td>Afghan Afghani</td>
+                        </tr>
+                        <tr>
+                            <td>ALL</td>
+                            <td>Albanian Lek</td>
+                        </tr>
+                        <tr>
+                            <td>AMD</td>
+                            <td>Armenian Dram</td>
+                        </tr>
+                        <tr>
+                            <td>ANG</td>
+                            <td>Netherlands Antillean Guilder</td>
+                        </tr>
+                        <tr>
+                            <td>AOA</td>
+                            <td>Angolan Kwanza</td>
+                        </tr>
+                        <tr>
+                            <td>ARS</td>
+                            <td>Argentine Peso</td>
+                        </tr>
+                        <tr>
+                            <td>AUD</td>
+                            <td>Australian Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>AWG</td>
+                            <td>Aruban Florin</td>
+                        </tr>
+                        <tr>
+                            <td>AZN</td>
+                            <td>Azerbaijani Manat</td>
+                        </tr>
+                        <tr>
+                            <td>BAM</td>
+                            <td>Bosnia-Herzegovina Convertible Mark</td>
+                        </tr>
+                        <tr>
+                            <td>BBD</td>
+                            <td>Barbadian Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>BDT</td>
+                            <td>Bangladeshi Taka</td>
+                        </tr>
+                        <tr>
+                            <td>BGN</td>
+                            <td>Bulgarian Lev</td>
+                        </tr>
+                        <tr>
+                            <td>BHD</td>
+                            <td>Bahraini Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>BIF</td>
+                            <td>Burundian Franc</td>
+                        </tr>
+                        <tr>
+                            <td>BMD</td>
+                            <td>Bermudan Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>BND</td>
+                            <td>Brunei Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>BOB</td>
+                            <td>Bolivian Boliviano</td>
+                        </tr>
+                        <tr>
+                            <td>BRL</td>
+                            <td>Brazilian Real</td>
+                        </tr>
+                        <tr>
+                            <td>BSD</td>
+                            <td>Bahamian Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>BTN</td>
+                            <td>Bhutanese Ngultrum</td>
+                        </tr>
+                        <tr>
+                            <td>BWP</td>
+                            <td>Botswanan Pula</td>
+                        </tr>
+                        <tr>
+                            <td>BYR</td>
+                            <td>Belarusian Ruble</td>
+                        </tr>
+                        <tr>
+                            <td>BZD</td>
+                            <td>Belize Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>CAD</td>
+                            <td>Canadian Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>CDF</td>
+                            <td>Congolese Franc</td>
+                        </tr>
+                        <tr>
+                            <td>CHF</td>
+                            <td>Swiss Franc</td>
+                        </tr>
+                        <tr>
+                            <td>CLF</td>
+                            <td>Chilean Unit of Account (UF)</td>
+                        </tr>
+                        <tr>
+                            <td>CLP</td>
+                            <td>Chilean Peso</td>
+                        </tr>
+                        <tr>
+                            <td>CNY</td>
+                            <td>Chinese Yuan</td>
+                        </tr>
+                        <tr>
+                            <td>COP</td>
+                            <td>Colombian Peso</td>
+                        </tr>
+                        <tr>
+                            <td>CRC</td>
+                            <td>Costa Rican Colón</td>
+                        </tr>
+                        <tr>
+                            <td>CUC</td>
+                            <td>Cuban Convertible Peso</td>
+                        </tr>
+                        <tr>
+                            <td>CUP</td>
+                            <td>Cuban Peso</td>
+                        </tr>
+                        <tr>
+                            <td>CVE</td>
+                            <td>Cape Verdean Escudo</td>
+                        </tr>
+                        <tr>
+                            <td>CZK</td>
+                            <td>Czech Republic Koruna</td>
+                        </tr>
+                        <tr>
+                            <td>DJF</td>
+                            <td>Djiboutian Franc</td>
+                        </tr>
+                        <tr>
+                            <td>DKK</td>
+                            <td>Danish Krone</td>
+                        </tr>
+                        <tr>
+                            <td>DOP</td>
+                            <td>Dominican Peso</td>
+                        </tr>
+                        <tr>
+                            <td>DZD</td>
+                            <td>Algerian Dinar</td>
+                        </tr>
+                        <!--<tr>
+                            <td>EEK</td>
+                            <td>Estonian Kroon</td>
+                        </tr>-->
+                        <tr>
+                            <td>EGP</td>
+                            <td>Egyptian Pound</td>
+                        </tr>
+                        <tr>
+                            <td>ERN</td>
+                            <td>Eritrean Nakfa</td>
+                        </tr>
+                        <tr>
+                            <td>ETB</td>
+                            <td>Ethiopian Birr</td>
+                        </tr>
+                        <tr>
+                            <td>EUR</td>
+                            <td>Euro</td>
+                        </tr>
+                        <tr>
+                            <td>FJD</td>
+                            <td>Fijian Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>FKP</td>
+                            <td>Falkland Islands Pound</td>
+                        </tr>
+                        <tr>
+                            <td>GBP</td>
+                            <td>British Pound Sterling</td>
+                        </tr>
+                        <tr>
+                            <td>GEL</td>
+                            <td>Georgian Lari</td>
+                        </tr>
+                        <tr>
+                            <td>GGP</td>
+                            <td>Guernsey Pound</td>
+                        </tr>
+                        <tr>
+                            <td>GHS</td>
+                            <td>Ghanaian Cedi</td>
+                        </tr>
+                        <tr>
+                            <td>GIP</td>
+                            <td>Gibraltar Pound</td>
+                        </tr>
+                        <tr>
+                            <td>GMD</td>
+                            <td>Gambian Dalasi</td>
+                        </tr>
+                        <tr>
+                            <td>GNF</td>
+                            <td>Guinean Franc</td>
+                        </tr>
+                        <tr>
+                            <td>GTQ</td>
+                            <td>Guatemalan Quetzal</td>
+                        </tr>
+                        <tr>
+                            <td>GYD</td>
+                            <td>Guyanaese Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>HKD</td>
+                            <td>Hong Kong Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>HNL</td>
+                            <td>Honduran Lempira</td>
+                        </tr>
+                        <tr>
+                            <td>HRK</td>
+                            <td>Croatian Kuna</td>
+                        </tr>
+                        <tr>
+                            <td>HTG</td>
+                            <td>Haitian Gourde</td>
+                        </tr>
+                        <tr>
+                            <td>HUF</td>
+                            <td>Hungarian Forint</td>
+                        </tr>
+                        <tr>
+                            <td>IDR</td>
+                            <td>Indonesian Rupiah</td>
+                        </tr>
+                        <tr>
+                            <td>ILS</td>
+                            <td>Israeli New Sheqel</td>
+                        </tr>
+                        <tr>
+                            <td>IMP</td>
+                            <td>Manx pound</td>
+                        </tr>
+                        <tr>
+                            <td>INR</td>
+                            <td>Indian Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>IQD</td>
+                            <td>Iraqi Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>IRR</td>
+                            <td>Iranian Rial</td>
+                        </tr>
+                        <tr>
+                            <td>ISK</td>
+                            <td>Icelandic Króna</td>
+                        </tr>
+                        <tr>
+                            <td>JEP</td>
+                            <td>Jersey Pound</td>
+                        </tr>
+                        <tr>
+                            <td>JMD</td>
+                            <td>Jamaican Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>JOD</td>
+                            <td>Jordanian Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>JPY</td>
+                            <td>Japanese Yen</td>
+                        </tr>
+                        <tr>
+                            <td>KES</td>
+                            <td>Kenyan Shilling</td>
+                        </tr>
+                        <tr>
+                            <td>KGS</td>
+                            <td>Kyrgystani Som</td>
+                        </tr>
+                        <tr>
+                            <td>KHR</td>
+                            <td>Cambodian Riel</td>
+                        </tr>
+                        <tr>
+                            <td>KMF</td>
+                            <td>Comorian Franc</td>
+                        </tr>
+                        <tr>
+                            <td>KPW</td>
+                            <td>North Korean Won</td>
+                        </tr>
+                        <tr>
+                            <td>KRW</td>
+                            <td>South Korean Won</td>
+                        </tr>
+                        <tr>
+                            <td>KWD</td>
+                            <td>Kuwaiti Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>KYD</td>
+                            <td>Cayman Islands Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>KZT</td>
+                            <td>Kazakhstani Tenge</td>
+                        </tr>
+                        <tr>
+                            <td>LAK</td>
+                            <td>Laotian Kip</td>
+                        </tr>
+                        <tr>
+                            <td>LBP</td>
+                            <td>Lebanese Pound</td>
+                        </tr>
+                        <tr>
+                            <td>LKR</td>
+                            <td>Sri Lankan Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>LRD</td>
+                            <td>Liberian Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>LSL</td>
+                            <td>Lesotho Loti</td>
+                        </tr>
+                        <tr>
+                            <td>LTL</td>
+                            <td>Lithuanian Litas</td>
+                        </tr>
+                        <tr>
+                            <td>LVL</td>
+                            <td>Latvian Lats</td>
+                        </tr>
+                        <tr>
+                            <td>LYD</td>
+                            <td>Libyan Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>MAD</td>
+                            <td>Moroccan Dirham</td>
+                        </tr>
+                        <tr>
+                            <td>MDL</td>
+                            <td>Moldovan Leu</td>
+                        </tr>
+                        <tr>
+                            <td>MGA</td>
+                            <td>Malagasy Ariary</td>
+                        </tr>
+                        <tr>
+                            <td>MKD</td>
+                            <td>Macedonian Denar</td>
+                        </tr>
+                        <tr>
+                            <td>MMK</td>
+                            <td>Myanma Kyat</td>
+                        </tr>
+                        <tr>
+                            <td>MNT</td>
+                            <td>Mongolian Tugrik</td>
+                        </tr>
+                        <tr>
+                            <td>MOP</td>
+                            <td>Macanese Pataca</td>
+                        </tr>
+                        <tr>
+                            <td>MRO</td>
+                            <td>Mauritanian Ouguiya</td>
+                        </tr>
+                        <tr>
+                            <td>MUR</td>
+                            <td>Mauritian Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>MVR</td>
+                            <td>Maldivian Rufiyaa</td>
+                        </tr>
+                        <tr>
+                            <td>MWK</td>
+                            <td>Malawian Kwacha</td>
+                        </tr>
+                        <tr>
+                            <td>MXN</td>
+                            <td>Mexican Peso</td>
+                        </tr>
+                        <tr>
+                            <td>MYR</td>
+                            <td>Malaysian Ringgit</td>
+                        </tr>
+                        <tr>
+                            <td>MZN</td>
+                            <td>Mozambican Metical</td>
+                        </tr>
+                        <tr>
+                            <td>NAD</td>
+                            <td>Namibian Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>NGN</td>
+                            <td>Nigerian Naira</td>
+                        </tr>
+                        <tr>
+                            <td>NIO</td>
+                            <td>Nicaraguan Córdoba</td>
+                        </tr>
+                        <tr>
+                            <td>NOK</td>
+                            <td>Norwegian Krone</td>
+                        </tr>
+                        <tr>
+                            <td>NPR</td>
+                            <td>Nepalese Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>NZD</td>
+                            <td>New Zealand Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>OMR</td>
+                            <td>Omani Rial</td>
+                        </tr>
+                        <tr>
+                            <td>PAB</td>
+                            <td>Panamanian Balboa</td>
+                        </tr>
+                        <tr>
+                            <td>PEN</td>
+                            <td>Peruvian Nuevo Sol</td>
+                        </tr>
+                        <tr>
+                            <td>PGK</td>
+                            <td>Papua New Guinean Kina</td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>Philippine Peso</td>
+                        </tr>
+                        <tr>
+                            <td>PKR</td>
+                            <td>Pakistani Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>PLN</td>
+                            <td>Polish Zloty</td>
+                        </tr>
+                        <tr>
+                            <td>PYG</td>
+                            <td>Paraguayan Guarani</td>
+                        </tr>
+                        <tr>
+                            <td>QAR</td>
+                            <td>Qatari Rial</td>
+                        </tr>
+                        <tr>
+                            <td>RON</td>
+                            <td>Romanian Leu</td>
+                        </tr>
+                        <tr>
+                            <td>RSD</td>
+                            <td>Serbian Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>RUB</td>
+                            <td>Russian Ruble</td>
+                        </tr>
+                        <tr>
+                            <td>RWF</td>
+                            <td>Rwandan Franc</td>
+                        </tr>
+                        <tr>
+                            <td>SAR</td>
+                            <td>Saudi Riyal</td>
+                        </tr>
+                        <tr>
+                            <td>SBD</td>
+                            <td>Solomon Islands Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>SCR</td>
+                            <td>Seychellois Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>SDG</td>
+                            <td>Sudanese Pound</td>
+                        </tr>
+                        <tr>
+                            <td>SEK</td>
+                            <td>Swedish Krona</td>
+                        </tr>
+                        <tr>
+                            <td>SGD</td>
+                            <td>Singapore Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>SHP</td>
+                            <td>Saint Helena Pound</td>
+                        </tr>
+                        <tr>
+                            <td>SLL</td>
+                            <td>Sierra Leonean Leone</td>
+                        </tr>
+                        <tr>
+                            <td>SOS</td>
+                            <td>Somali Shilling</td>
+                        </tr>
+                        <tr>
+                            <td>SRD</td>
+                            <td>Surinamese Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>STD</td>
+                            <td>São Tomé and Príncipe Dobra</td>
+                        </tr>
+                        <tr>
+                            <td>SVC</td>
+                            <td>Salvadoran Colón</td>
+                        </tr>
+                        <tr>
+                            <td>SYP</td>
+                            <td>Syrian Pound</td>
+                        </tr>
+                        <tr>
+                            <td>SZL</td>
+                            <td>Swazi Lilangeni</td>
+                        </tr>
+                        <tr>
+                            <td>THB</td>
+                            <td>Thai Baht</td>
+                        </tr>
+                        <tr>
+                            <td>TJS</td>
+                            <td>Tajikistani Somoni</td>
+                        </tr>
+                        <tr>
+                            <td>TMT</td>
+                            <td>Turkmenistani Manat</td>
+                        </tr>
+                        <tr>
+                            <td>TND</td>
+                            <td>Tunisian Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>TOP</td>
+                            <td>Tongan Paʻanga</td>
+                        </tr>
+                        <tr>
+                            <td>TRY</td>
+                            <td>Turkish Lira</td>
+                        </tr>
+                        <tr>
+                            <td>TTD</td>
+                            <td>Trinidad and Tobago Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>TWD</td>
+                            <td>New Taiwan Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>TZS</td>
+                            <td>Tanzanian Shilling</td>
+                        </tr>
+                        <tr>
+                            <td>UAH</td>
+                            <td>Ukrainian Hryvnia</td>
+                        </tr>
+                        <tr>
+                            <td>UGX</td>
+                            <td>Ugandan Shilling</td>
+                        </tr>
+                        <tr>
+                            <td>USD</td>
+                            <td>United States Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>UYU</td>
+                            <td>Uruguayan Peso</td>
+                        </tr>
+                        <tr>
+                            <td>UZS</td>
+                            <td>Uzbekistan Som</td>
+                        </tr>
+                        <tr>
+                            <td>VEF</td>
+                            <td>Venezuelan Bolívar Fuerte</td>
+                        </tr>
+                        <tr>
+                            <td>VND</td>
+                            <td>Vietnamese Dong</td>
+                        </tr>
+                        <tr>
+                            <td>VUV</td>
+                            <td>Vanuatu Vatu</td>
+                        </tr>
+                        <tr>
+                            <td>WST</td>
+                            <td>Samoan Tala</td>
+                        </tr>
+                        <tr>
+                            <td>XAF</td>
+                            <td>CFA Franc BEAC</td>
+                        </tr>
+                        <tr>
+                            <td>XAG</td>
+                            <td>Silver (troy ounce)</td>
+                        </tr>
+                        <tr>
+                            <td>XAU</td>
+                            <td>Gold (troy ounce)</td>
+                        </tr>
+                        <tr>
+                            <td>XCD</td>
+                            <td>East Caribbean Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>XDR</td>
+                            <td>Special Drawing Rights</td>
+                        </tr>
+                        <tr>
+                            <td>XOF</td>
+                            <td>CFA Franc BCEAO</td>
+                        </tr>
+                        <tr>
+                            <td>XPF</td>
+                            <td>CFP Franc</td>
+                        </tr>
+                        <tr>
+                            <td>YER</td>
+                            <td>Yemeni Rial</td>
+                        </tr>
+                        <tr>
+                            <td>ZAR</td>
+                            <td>South African Rand</td>
+                        </tr>
+                        <tr>
+                            <td>ZMK</td>
+                            <td>Zambian Kwacha (pre-2013)</td>
+                        </tr>
+                        <tr>
+                            <td>ZMW</td>
+                            <td>Zambian Kwacha</td>
+                        </tr>
+                        <tr>
+                            <td>ZWL</td>
+                            <td>Zimbabwean Dollar</td>
+                        </tr>
+                    </tbody>
+                </table>
+    <img src="" alt="">
+    <video src=""></video>
+   <div id="explanation"></div>
+
+<table>
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                 <tbody>
+                     <tr>
+                        <td>611</td>
+                        <td>SixEleven</td>
+                     </tr>
+                     <tr>
+                        <td>ABC</td>
+                        <td>AB-Chain</td>
+                     </tr>
+                     <tr>
+                        <td>ACP</td>
+                        <td>Anarchists Prime</td>
+                     </tr>
+                     <tr>
+                        <td>ACT</td>
+                        <td>ACT</td>
+                     </tr>
+                     <tr>
+                        <td>ACT*</td>
+                        <td>Achain</td>
+                     </tr>
+                     <tr>
+                        <td>ADA</td>
+                        <td>Cardano</td>
+                     </tr>
+                     <tr>
+                        <td>ADCN</td>
+                        <td>Asiadigicoin</td>
+                     </tr>
+                     <tr>
+                        <td>ADL</td>
+                        <td>Adelphoi</td>
+                     </tr>
+                     <tr>
+                        <td>ADX</td>
+                        <td>AdEx</td>
+                     </tr>
+                     <tr>
+                        <td>ADZ</td>
+                        <td>Adzcoin</td>
+                     </tr>
+                     <tr>
+                        <td>AE</td>
+                        <td>Aeternity</td>
+                     </tr>
+                     <tr>
+                        <td>AGI</td>
+                        <td>SingularityNET</td>
+                     </tr>
+                     <tr>
+                        <td>AIB</td>
+                        <td>AdvancedInternetBlock</td>
+                     </tr>
+                     <tr>
+                        <td>AIDOC</td>
+                        <td>AI Doctor</td>
+                     </tr>
+                     <tr>
+                        <td>AION</td>
+                        <td>Aion</td>
+                     </tr>
+                     <tr>
+                        <td>AIR</td>
+                        <td>AirToken</td>
+                     </tr>
+                     <tr>
+                        <td>ALT</td>
+                        <td>ALTcoin</td>
+                     </tr>
+                     <tr>
+                        <td>AMB</td>
+                        <td>Ambrosus</td>
+                     </tr>
+                     <tr>
+                        <td>AMM</td>
+                        <td>MicroMoney</td>
+                     </tr>
+                     <tr>
+                        <td>ANT</td>
+                        <td>Aragon</td>
+                     </tr>
+                     <tr>
+                        <td>APC</td>
+                        <td>AlpaCoin</td>
+                     </tr>
+                     <tr>
+                        <td>APPC</td>
+                        <td>AppCoins</td>
+                     </tr>
+                     <tr>
+                        <td>ARC</td>
+                        <td>ArcticCoin</td>
+                     </tr>
+                     <tr>
+                        <td>ARCT</td>
+                        <td>ArbitrageCT</td>
+                     </tr>
+                     <tr>
+                        <td>ARDR</td>
+                        <td>Ardor</td>
+                     </tr>
+                     <tr>
+                        <td>ARK</td>
+                        <td>ARK</td>
+                     </tr>
+                     <tr>
+                        <td>ARN</td>
+                        <td>Aeron</td>
+                     </tr>
+                     <tr>
+                        <td>ASAFE2</td>
+                        <td>Allsafe</td>
+                     </tr>
+                     <tr>
+                        <td>AST</td>
+                        <td>AirSwap</td>
+                     </tr>
+                     <tr>
+                        <td>ATB</td>
+                        <td>ATB coin</td>
+                     </tr>
+                     <tr>
+                        <td>ATM</td>
+                        <td>ATMChain</td>
+                     </tr>
+                     <tr>
+                        <td>AURS</td>
+                        <td>Aureus</td>
+                     </tr>
+                     <tr>
+                        <td>AVAX</td>
+                        <td>Avalanche</td>
+                     </tr>
+                    <tr>
+                       <td>AVT</td>
+                       <td>AventCoin</td>
+                    </tr>
+                    <tr>
+                        <td>BAR</td>
+                        <td>TBIS token</td>
+                     </tr>
+                  <tr>
+                     <td>BASH</td>
+                     <td>LuckChain</td>
+                  </tr>
+                  <tr>
+                     <td>BAT</td>
+                     <td>Basic Attention Token</td>
+                  </tr>
+                  <tr>
+                     <td>BAY</td>
+                     <td>BitBay</td>
+                  </tr>
+                  <tr>
+                     <td>BBP</td>
+                     <td>BiblePay</td>
+                  </tr>
+                  <tr>
+                     <td>BCD</td>
+                     <td>Bitcoin Diamond</td>
+                  </tr>
+                  <tr>
+                     <td>BCH</td>
+                     <td>Bitcoin Cash / BCC</td>
+                  </tr>
+                  <tr>
+                     <td>BCN</td>
+                     <td>ByteCoin</td>
+                  </tr>
+                  <tr>
+                     <td>BCPT</td>
+                     <td>BlockMason Credit Protocol</td>
+                  </tr>
+                  <tr>
+                     <td>BEE</td>
+                     <td>Bee Token</td>
+                  </tr>
+                  <tr>
+                     <td>BIO</td>
+                     <td>Biocoin</td>
+                  </tr>
+                  <tr>
+                     <td>BLC</td>
+                     <td>BlakeCoin</td>
+                  </tr>
+                  <tr>
+                     <td>BLOCK</td>
+                     <td>BlockNet</td>
+                  </tr>
+                  <tr>
+                     <td>BLU</td>
+                     <td>BlueCoin</td>
+                  </tr>
+                  <tr>
+                     <td>BLZ</td>
+                     <td>Bluzelle</td>
+                  </tr>
+                  <tr>
+                     <td>BMC</td>
+                     <td>Blackmoon Crypto</td>
+                  </tr>
+                  <tr>
+                     <td>BNB</td>
+                     <td>Binance Coin</td>
+                  </tr>
+                  <tr>
+                     <td>BNT</td>
+                     <td>Bancor Network Token</td>
+                  </tr>
+                  <tr>
+                     <td>BOST</td>
+                     <td>BoostCoin</td>
+                  </tr>
+                  <tr>
+                     <td>BQ</td>
+                     <td>Bitqy</td>
+                  </tr>
+                  <tr>
+                     <td>BQX</td>
+                     <td>Ethos</td>
+                  </tr>
+                  <tr>
+                     <td>BRD</td>
+                     <td>Bread token</td>
+                  </tr>
+                  <tr>
+                     <td>BRIT</td>
+                     <td>BritCoin</td>
+                  </tr>
+                  <tr>
+                     <td>BT1</td>
+                     <td>Bitfinex Bitcoin Future</td>
+                  </tr>
+                  <tr>
+                     <td>BT2</td>
+                     <td>Bitcoin SegWit2X</td>
+                  </tr>
+                  <tr>
+                     <td>BTC</td>
+                     <td>Bitcoin</td>
+                  </tr>
+                  <tr>
+                     <td>BTCA</td>
+                     <td>Bitair</td>
+                  </tr>
+                  <tr>
+                     <td>BTCS</td>
+                     <td>Bitcoin Scrypt</td>
+                  </tr>
+                  <tr>
+                     <td>BTCZ</td>
+                     <td>BitcoinZ</td>
+                  </tr>
+                  <tr>
+                     <td>BTG</td>
+                     <td>Bitcoin Gold</td>
+                  </tr>
+                  <tr>
+                     <td>BTLC</td>
+                     <td>BitLuckCoin</td>
+                  </tr>
+                  <tr>
+                     <td>BTM</td>
+                     <td>BitMark</td>
+                  </tr>
+                  <tr>
+                     <td>BTM*</td>
+                     <td>Bytom</td>
+                  </tr>
+                  <tr>
+                     <td>BTQ</td>
+                     <td>BitQuark</td>
+                  </tr>
+                  <tr>
+                     <td>BTS</td>
+                     <td>Bitshares</td>
+                  </tr>
+                  <tr>
+                     <td>BTX</td>
+                     <td>Bitcore</td>
+                  </tr>
+                  <tr>
+                     <td>BURST</td>
+                     <td>BurstCoin</td>
+                  </tr>
+                  <tr>
+                     <td>CALC</td>
+                     <td>CaliphCoin</td>
+               </tr>
+               <tr>
+                     <td>CAS</td>
+                     <td>Cashaa</td>
+               </tr>
+               <tr>
+                     <td>CAT</td>
+                     <td>BlockCAT</td>
+               </tr>
+               <tr>
+                     <td>CCRB</td>
+                     <td>CryptoCarbon</td>
+               </tr>
+               <tr>
+                     <td>CDT</td>
+                     <td>CoinDash</td>
+               </tr>
+               <tr>
+                     <td>CESC</td>
+                     <td>Crypto Escudo</td>
+               </tr>
+               <tr>
+                     <td>CHAT</td>
+                     <td>ChatCoin</td>
+               </tr>
+               <tr>
+                     <td>CJ</td>
+                     <td>CryptoJacks</td>
+               </tr>
+               <tr>
+                     <td>CL</td>
+                     <td>CoinLancer</td>
+               </tr>
+               <tr>
+                     <td>CLD</td>
+                     <td>Cloud</td>
+               </tr>
+               <tr>
+                     <td>CLOAK</td>
+                     <td>CloakCoin</td>
+               </tr>
+               <tr>
+                     <td>CMT*</td>
+                     <td>CyberMiles</td>
+               </tr>
+               <tr>
+                     <td>CND</td>
+                     <td>Cindicator</td>
+               </tr>
+               <tr>
+                     <td>CNX</td>
+                     <td>Cryptonex</td>
+               </tr>
+               <tr>
+                     <td>CPC</td>
+                     <td>CapriCoin</td>
+               </tr>
+               <tr>
+                     <td>CRAVE</td>
+                     <td>CraveCoin</td>
+               </tr>
+               <tr>
+                     <td>CRC</td>
+                     <td>CrowdCoin</td>
+               </tr>
+               <tr>
+                     <td>CRE</td>
+                     <td>Credits</td>
+               </tr>
+               <tr>
+                     <td>CRW</td>
+                     <td>Crown Coin</td>
+               </tr>
+               <tr>
+                     <td>CTO</td>
+                     <td>Crypto</td>
+               </tr>
+               <tr>
+                     <td>CTR</td>
+                     <td>Centra</td>
+               </tr>
+               <tr>
+                     <td>CVC</td>
+                     <td>Civic</td>
+               </tr>
+               <tr>
+               <td>DAS</td>
+               <td>DAS</td>
+            </tr>
+            <tr>
+                  <td>DASH</td>
+                  <td>DigitalCash</td>
+            </tr>
+            <tr>
+                  <td>DAT</td>
+                  <td>Datum</td>
+            </tr>
+            <tr>
+                  <td>DATA</td>
+                  <td>Streamr DATAcoin</td>
+            </tr>
+            <tr>
+                  <td>DBC</td>
+                  <td>DeepBrain Chain</td>
+            </tr>
+            <tr>
+                  <td>DBET</td>
+                  <td>Decent.bet</td>
+            </tr>
+            <tr>
+                  <td>DCN</td>
+                  <td>Dentacoin</td>
+            </tr>
+            <tr>
+                  <td>DCR</td>
+                  <td>Decred</td>
+            </tr>
+            <tr>
+                  <td>DCT</td>
+                  <td>Decent</td>
+            </tr>
+            <tr>
+                  <td>DEEP</td>
+                  <td>Deep Gold</td>
+            </tr>
+            <tr>
+                  <td>DENT</td>
+                  <td>Dent</td>
+            </tr>
+            <tr>
+                  <td>DGB</td>
+                  <td>DigiByte</td>
+            </tr>
+            <tr>
+                  <td>DGD</td>
+                  <td>Digix DAO</td>
+            </tr>
+            <tr>
+                  <td>DIM</td>
+                  <td>DIMCOIN</td>
+            </tr>
+            <tr>
+                  <td>DIME</td>
+                  <td>DimeCoin</td>
+            </tr>
+            <tr>
+                  <td>DMD</td>
+                  <td>Diamond</td>
+            </tr>
+            <tr>
+                  <td>DNT</td>
+                  <td>district0x</td>
+            </tr>
+            <tr>
+                  <td>DOGE</td>
+                  <td>Dogecoin</td>
+            </tr>
+            <tr>
+                  <td>DRGN</td>
+                  <td>Dragonchain</td>
+            </tr>
+            <tr>
+                  <td>DRZ</td>
+                  <td>Droidz</td>
+            </tr>
+            <tr>
+                  <td>DSH</td>
+                  <td>Dashcoin</td>
+            </tr>
+            <tr>
+                  <td>DTA</td>
+                  <td>Data</td>
+            </tr>
+
+            <tr>
+               <td>EC</td>
+               <td>Eclipse</td>
+            </tr>
+         <tr>
+               <td>EDG</td>
+               <td>Edgeless</td>
+         </tr>
+         <tr>
+               <td>EDO</td>
+               <td>Eidoo</td>
+         </tr>
+         <tr>
+               <td>EDR</td>
+               <td>E-Dinar Coin</td>
+         </tr>
+         <tr>
+               <td>EKO</td>
+               <td>EchoLink</td>
+         </tr>
+         <tr>
+               <td>ELA</td>
+               <td>Elastos</td>
+         </tr>
+         <tr>
+               <td>ELF</td>
+               <td>aelf</td>
+         </tr>
+         <tr>
+               <td>EMC</td>
+               <td>Emercoin</td>
+         </tr>
+         <tr>
+               <td>EMGO</td>
+               <td>MobileGo</td>
+         </tr>
+         <tr>
+               <td>ENG</td>
+               <td>Enigma</td>
+         </tr>
+         <tr>
+               <td>ENJ</td>
+               <td>Enjin Coin</td>
+         </tr>
+         <tr>
+               <td>EOS</td>
+               <td>EOS</td>
+         </tr>
+         <tr>
+               <td>ERT</td>
+               <td>Esports.com</td>
+         </tr>
+         <tr>
+               <td>ETC</td>
+               <td>Ethereum Classic</td>
+         </tr>
+         <tr>
+               <td>ETH</td>
+               <td>Ethereum</td>
+         </tr>
+         <tr>
+               <td>ETN</td>
+               <td>Electroneum</td>
+         </tr>
+         <tr>
+               <td>ETP</td>
+               <td>Metaverse</td>
+         </tr>
+         <tr>
+               <td>ETT</td>
+               <td>EncryptoTel</td>
+         </tr>
+         <tr>
+               <td>EVR</td>
+               <td>Everus</td>
+         </tr>
+         <tr>
+               <td>EVX</td>
+               <td>Everex</td>
+         </tr>
+         <tr>
+            <td>FCT</td>
+            <td>Factoids</td>
+        </tr>
+        <tr>
+            <td>FLP</td>
+            <td>Gameflip</td>
+        </tr>
+        <tr>
+            <td>FOTA</td>
+            <td>Fortuna</td>
+        </tr>
+        <tr>
+            <td>FRST</td>
+            <td>FirstCoin</td>
+        </tr>
+        <tr>
+            <td>FUEL</td>
+            <td>Etherparty</td>
+        </tr>
+        <tr>
+            <td>FUN</td>
+            <td>FunFair</td>
+        </tr>
+        <tr>
+            <td>FUNC</td>
+            <td>FunCoin</td>
+        </tr>
+        <tr>
+            <td>FUTC</td>
+            <td>FutCoin</td>
+        </tr>
+        <tr>
+            <td>GAME</td>
+            <td>Gamecredits</td>
+        </tr>
+        <tr>
+            <td>GAS</td>
+            <td>Gas</td>
+        </tr>
+        <tr>
+            <td>GBYTE</td>
+            <td>Byteball</td>
+        </tr>
+        <tr>
+            <td>GMX</td>
+            <td>Goldmaxcoin</td>
+        </tr>
+        <tr>
+            <td>GNO</td>
+            <td>Gnosis</td>
+        </tr>
+        <tr>
+            <td>GNT</td>
+            <td>Golem Network Token</td>
+        </tr>
+        <tr>
+            <td>GNX</td>
+            <td>Genaro Network</td>
+        </tr>
+        <tr>
+            <td>GRC</td>
+            <td>GridCoin</td>
+        </tr>
+        <tr>
+            <td>GRS</td>
+            <td>Groestlcoin</td>
+        </tr>
+        <tr>
+            <td>GRWI</td>
+            <td>Growers International</td>
+        </tr>
+        <tr>
+            <td>GTC</td>
+            <td>Game</td>
+        </tr>
+        <tr>
+            <td>GTO</td>
+            <td>GIFTO</td>
+        </tr>
+        <tr>
+            <td>GUP</td>
+            <td>Guppy</td>
+        </tr>
+        <tr>
+            <td>GVT</td>
+            <td>Genesis Vision</td>
+        </tr>
+        <tr>
+            <td>GXS</td>
+            <td>GXShares</td>
+        </tr>
+        <tr>
+            <td>HAC</td>
+            <td>Hackspace Capital</td>
+        </tr>
+        <tr>
+            <td>HNC</td>
+            <td>Hellenic Coin</td>
+        </tr>
+        <tr>
+            <td>HSR</td>
+            <td>Hshare</td>
+        </tr>
+        <tr>
+            <td>HST</td>
+            <td>Decision Token</td>
+        </tr>
+        <tr>
+            <td>HVN</td>
+            <td>Hive Project</td>
+        </tr>
+        <tr>
+            <td>ICN</td>
+            <td>Iconomi</td>
+        </tr>
+        <tr>
+            <td>ICOS</td>
+            <td>ICOBox</td>
+        </tr>
+        <tr>
+            <td>ICX</td>
+            <td>ICON Project</td>
+        </tr>
+        <tr>
+            <td>IGNIS</td>
+            <td>Ignis</td>
+        </tr>
+        <tr>
+            <td>ILC</td>
+            <td>ILCoin</td>
+        </tr>
+        <tr>
+            <td>INK</td>
+            <td>Ink</td>
+        </tr>
+        <tr>
+            <td>INS</td>
+            <td>INS Ecosystem</td>
+        </tr>
+        <tr>
+            <td>INSN</td>
+            <td>Insane Coin</td>
+        </tr>
+        <tr>
+            <td>INT</td>
+            <td>Internet Node Token</td>
+        </tr>
+        <tr>
+            <td>IOP</td>
+            <td>Internet of People</td>
+        </tr>
+        <tr>
+            <td>IOST</td>
+            <td>IOS token</td>
+        </tr>
+        <tr>
+            <td>ITC</td>
+            <td>IoT Chain</td>
+        </tr>
+        <tr>
+            <td>KCS</td>
+            <td>Kucoin</td>
+        </tr>
+        <tr>
+            <td>KICK</td>
+            <td>KickCoin</td>
+        </tr>
+        <tr>
+            <td>KIN</td>
+            <td>Kin</td>
+        </tr>
+        <tr>
+            <td>KLC</td>
+            <td>KiloCoin</td>
+        </tr>
+        <tr>
+            <td>KMD</td>
+            <td>Komodo</td>
+        </tr>
+        <tr>
+            <td>KNC</td>
+            <td>Kyber Network</td>
+        </tr>
+        <tr>
+            <td>KRB</td>
+            <td>Karbo</td>
+        </tr>
+        <tr>
+            <td>LA</td>
+            <td>LATOKEN</td>
+        </tr>
+        <tr>
+            <td>LEND</td>
+            <td>EthLend</td>
+        </tr>
+        <tr>
+            <td>LEO</td>
+            <td>LEOcoin</td>
+        </tr>
+        <tr>
+            <td>LINDA</td>
+            <td>Linda</td>
+        </tr>
+        <tr>
+            <td>LINK</td>
+            <td>ChainLink</td>
+        </tr>
+        <tr>
+            <td>LOC</td>
+            <td>Loco</td>
+        </tr>
+        <tr>
+            <td>LOG</td>
+            <td>Wood Coin</td>
+        </tr>
+        <tr>
+            <td>LRC</td>
+            <td>Loopring</td>
+        </tr>
+        <tr>
+            <td>LSK</td>
+            <td>Lisk</td>
+        </tr>
+        <tr>
+            <td>LTC</td>
+            <td>Litecoin</td>
+        </tr>
+        <tr>
+            <td>LUN</td>
+            <td>Lunyr</td>
+        </tr>
+        <tr>
+            <td>LUX</td>
+            <td>LUXCoin</td>
+        </tr>
+        <tr>
+            <td>MAID</td>
+            <td>MaidSafe Coin</td>
+        </tr>
+        <tr>
+            <td>MANA</td>
+            <td>Decentraland</td>
+        </tr>
+        <tr>
+            <td>MCAP</td>
+            <td>MCAP</td>
+        </tr>
+        <tr>
+            <td>MCO</td>
+            <td>Monaco</td>
+        </tr>
+        <tr>
+            <td>MDA</td>
+            <td>Moeda</td>
+        </tr>
+        <tr>
+            <td>MDS</td>
+            <td>MediShares</td>
+        </tr>
+        <tr>
+            <td>MIOTA</td>
+            <td>IOTA</td>
+        </tr>
+        <tr>
+            <td>MKR</td>
+            <td>Maker</td>
+        </tr>
+        <tr>
+            <td>MLN</td>
+            <td>Melon</td>
+        </tr>
+        <tr>
+            <td>MNX</td>
+            <td>MinexCoin</td>
+        </tr>
+        <tr>
+            <td>MOD</td>
+            <td>Modum</td>
+        </tr>
+        <tr>
+            <td>MOIN</td>
+            <td>MoinCoin</td>
+        </tr>
+        <tr>
+            <td>MONA</td>
+            <td>MonaCoin</td>
+        </tr>
+        <tr>
+            <td>MTL</td>
+            <td>Metal</td>
+        </tr>
+        <tr>
+            <td>MTN*</td>
+            <td>Medicalchain</td>
+        </tr>
+        <tr>
+            <td>MTX</td>
+            <td>Matryx</td>
+        </tr>
+
+        <tr>
+            <td>NAS</td>
+            <td>Nebulas</td>
+        </tr>
+        <tr>
+            <td>NAV</td>
+            <td>NavCoin</td>
+        </tr>
+        <tr>
+            <td>NBT</td>
+            <td>NuBits</td>
+        </tr>
+        <tr>
+            <td>NDC</td>
+            <td>NeverDie</td>
+        </tr>
+        <tr>
+            <td>NEBL</td>
+            <td>Neblio</td>
+        </tr>
+        <tr>
+            <td>NEO</td>
+            <td>NEO</td>
+        </tr>
+        <tr>
+            <td>NEU</td>
+            <td>Neumark</td>
+        </tr>
+        <tr>
+            <td>NEWB</td>
+            <td>Newbium</td>
+        </tr>
+        <tr>
+            <td>NGC</td>
+            <td>NagaCoin</td>
+        </tr>
+        <tr>
+            <td>NKC</td>
+            <td>Nukecoinz</td>
+        </tr>
+        <tr>
+            <td>NLC2</td>
+            <td>NoLimitCoin</td>
+        </tr>
+        <tr>
+            <td>NMC</td>
+            <td>NameCoin</td>
+        </tr>
+        <tr>
+            <td>NMR</td>
+            <td>Numerai</td>
+        </tr>
+        <tr>
+            <td>NULS</td>
+            <td>Nuls</td>
+        </tr>
+        <tr>
+            <td>NVC</td>
+            <td>NovaCoin</td>
+        </tr>
+        <tr>
+            <td>NXT</td>
+            <td>Nxt</td>
+        </tr>
+        <tr>
+            <td>OAX</td>
+            <td>OpenANX</td>
+        </tr>
+        <tr>
+            <td>OBITS</td>
+            <td>Obits Coin</td>
+        </tr>
+        <tr>
+            <td>OC</td>
+            <td>OrangeCoin</td>
+        </tr>
+        <tr>
+            <td>OCN</td>
+            <td>Odyssey</td>
+        </tr>
+        <tr>
+            <td>ODN</td>
+            <td>Obsidian</td>
+        </tr>
+        <tr>
+            <td>OK</td>
+            <td>OKCash</td>
+        </tr>
+        <tr>
+            <td>OMG</td>
+            <td>OmiseGo</td>
+        </tr>
+        <tr>
+            <td>OMNI</td>
+            <td>Omni</td>
+        </tr>
+        <tr>
+            <td>ORE</td>
+            <td>Galactrum</td>
+        </tr>
+        <tr>
+            <td>ORME</td>
+            <td>Ormeus Coin</td>
+        </tr>
+        <tr>
+            <td>OST</td>
+            <td>Simple Token</td>
+        </tr>
+        <tr>
+            <td>OTN</td>
+            <td>Open Trading Network</td>
+        </tr>
+        <tr>
+            <td>OTX</td>
+            <td>Octanox</td>
+        </tr>
+        <tr>
+            <td>OXY</td>
+            <td>Oxycoin</td>
+        </tr>
+        <tr>
+            <td>PART</td>
+            <td>Particl</td>
+        </tr>
+        <tr>
+            <td>PAY</td>
+            <td>TenX</td>
+        </tr>
+        <tr>
+            <td>PBT</td>
+            <td>Primalbase</td>
+        </tr>
+        <tr>
+            <td>PCS</td>
+            <td>Pabyosi Coin</td>
+        </tr>
+        <tr>
+            <td>PIVX</td>
+            <td>Private Instant Verified Transaction</td>
+        </tr>
+        <tr>
+            <td>PIZZA</td>
+            <td>PizzaCoin</td>
+        </tr>
+        <tr>
+            <td>PLBT</td>
+            <td>Polybius</td>
+        </tr>
+        <tr>
+            <td>PLR</td>
+            <td>Pillar</td>
+        </tr>
+        <tr>
+            <td>POE</td>
+            <td>Po.et</td>
+        </tr>
+        <tr>
+            <td>POLY</td>
+            <td>PolyBit</td>
+        </tr>
+        <tr>
+            <td>POSW</td>
+            <td>PoSWallet</td>
+        </tr>
+        <tr>
+            <td>POWR</td>
+            <td>Power Ledger</td>
+        </tr>
+        <tr>
+            <td>PPC</td>
+            <td>PeerCoin</td>
+        </tr>
+        <tr>
+            <td>PPT</td>
+            <td>Populous</td>
+        </tr>
+        <tr>
+            <td>PPY</td>
+            <td>Peerplays</td>
+        </tr>
+        <tr>
+            <td>PRC</td>
+            <td>ProsperCoin</td>
+        </tr>
+        <tr>
+            <td>PRES</td>
+            <td>President Trump</td>
+        </tr>
+        <tr>
+            <td>PRG</td>
+            <td>Paragon</td>
+        </tr>
+        <tr>
+            <td>PRL</td>
+            <td>Oyster Pearl</td>
+        </tr>
+        <tr>
+            <td>PRO</td>
+            <td>Propy</td>
+        </tr>
+        <tr>
+            <td>PURA</td>
+            <td>Pura</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>PutinCoin</td>
+        </tr>
+        <tr>
+            <td>QASH</td>
+            <td>Quoine Liquid</td>
+        </tr>
+        <tr>
+            <td>QAU</td>
+            <td>Quantum</td>
+        </tr>
+        <tr>
+            <td>QSP</td>
+            <td>Quantstamp</td>
+        </tr>
+        <tr>
+            <td>QTUM</td>
+            <td>QTUM</td>
+        </tr>
+        <tr>
+            <td>QUN</td>
+            <td>QunQun</td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>Revain</td>
+        </tr>
+        <tr>
+            <td>RBIES</td>
+            <td>Rubies</td>
+        </tr>
+        <tr>
+            <td>RCN</td>
+            <td>Ripio</td>
+        </tr>
+        <tr>
+            <td>RDD</td>
+            <td>ReddCoin</td>
+        </tr>
+        <tr>
+            <td>RDN</td>
+            <td>RadonPay</td>
+        </tr>
+        <tr>
+            <td>RDN*</td>
+            <td>Raiden Network</td>
+        </tr>
+        <tr>
+            <td>REBL</td>
+            <td>Rebellious</td>
+        </tr>
+        <tr>
+            <td>REE</td>
+            <td>ReeCoin</td>
+        </tr>
+        <tr>
+            <td>REP</td>
+            <td>Augur</td>
+        </tr>
+        <tr>
+            <td>REQ</td>
+            <td>Request Network</td>
+        </tr>
+        <tr>
+            <td>REV</td>
+            <td>Revenu</td>
+        </tr>
+        <tr>
+            <td>RGC</td>
+            <td>RG Coin</td>
+        </tr>
+        <tr>
+            <td>RHOC</td>
+            <td>RChain</td>
+        </tr>
+        <tr>
+            <td>RIYA</td>
+            <td>Etheriya</td>
+        </tr>
+        <tr>
+            <td>RKC</td>
+            <td>Royal Kingdom Coin</td>
+        </tr>
+        <tr>
+            <td>RLC</td>
+            <td>iEx.ec</td>
+        </tr>
+        <tr>
+            <td>RPX</td>
+            <td>Red Pulse</td>
+        </tr>
+        <tr>
+            <td>RUFF</td>
+            <td>Ruff</td>
+        </tr>
+        <tr>
+            <td>SALT</td>
+            <td>Salt Lending</td>
+        </tr>
+        <tr>
+            <td>SAN</td>
+            <td>Santiment</td>
+        </tr>
+        <tr>
+            <td>SBC</td>
+            <td>StableCoin</td>
+        </tr>
+        <tr>
+            <td>SC</td>
+            <td>Siacoin</td>
+        </tr>
+        <tr>
+            <td>SENT</td>
+            <td>Sentinel</td>
+        </tr>
+        <tr>
+            <td>SHIFT</td>
+            <td>Shift</td>
+        </tr>
+        <tr>
+            <td>SIB</td>
+            <td>SibCoin</td>
+        </tr>
+        <tr>
+            <td>SMART</td>
+            <td>SmartCash</td>
+        </tr>
+        <tr>
+            <td>SMLY</td>
+            <td>SmileyCoin</td>
+        </tr>
+        <tr>
+            <td>SMT*</td>
+            <td>SmartMesh</td>
+        </tr>
+        <tr>
+            <td>SNC</td>
+            <td>SunContract</td>
+        </tr>
+        <tr>
+            <td>SNGLS</td>
+            <td>SingularDTV</td>
+        </tr>
+        <tr>
+            <td>SNM</td>
+            <td>SONM</td>
+        </tr>
+        <tr>
+            <td>SNT</td>
+            <td>Status Network Token</td>
+        </tr>
+        <tr>
+            <td>SOL</td>
+            <td>Solana</td>
+        </tr>
+        <tr>
+            <td>SPK</td>
+            <td>Sparks</td>
+        </tr>
+        <tr>
+            <td>SRN</td>
+            <td>SirinLabs</td>
+        </tr>
+        <tr>
+            <td>STEEM</td>
+            <td>Steem</td>
+        </tr>
+        <tr>
+            <td>STK</td>
+            <td>STK Token</td>
+        </tr>
+        <tr>
+            <td>STORJ</td>
+            <td>Storj</td>
+        </tr>
+        <tr>
+            <td>STRAT</td>
+            <td>Stratis</td>
+        </tr>
+        <tr>
+            <td>STU</td>
+            <td>BitJob</td>
+        </tr>
+        <tr>
+            <td>STX</td>
+            <td>Stox</td>
+        </tr>
+        <tr>
+            <td>SUB</td>
+            <td>Substratum Network</td>
+        </tr>
+        <tr>
+            <td>SUR</td>
+            <td>Suretly</td>
+        </tr>
+        <tr>
+            <td>SWFTC</td>
+            <td>SwftCoin</td>
+        </tr>
+        <tr>
+            <td>TAAS</td>
+            <td>Token as a Service</td>
+        </tr>
+        <tr>
+            <td>TESLA</td>
+            <td>TeslaCoilCoin</td>
+        </tr>
+        <tr>
+            <td>THC</td>
+            <td>The Hempcoin</td>
+        </tr>
+        <tr>
+            <td>THETA</td>
+            <td>Theta</td>
+        </tr>
+        <tr>
+            <td>THS</td>
+            <td>TechShares</td>
+        </tr>
+        <tr>
+            <td>TIO</td>
+            <td>Trade.io</td>
+        </tr>
+        <tr>
+            <td>TKN</td>
+            <td>TokenCard</td>
+        </tr>
+        <tr>
+            <td>TKY</td>
+            <td>THEKEY Token</td>
+        </tr>
+        <tr>
+            <td>TNB</td>
+            <td>Time New Bank</td>
+        </tr>
+        <tr>
+            <td>TNT</td>
+            <td>Tierion</td>
+        </tr>
+        <tr>
+            <td>TOA</td>
+            <td>TOA Coin</td>
+        </tr>
+        <tr>
+            <td>TRC</td>
+            <td>TerraCoin</td>
+        </tr>
+        <tr>
+            <td>TRIG</td>
+            <td>Trigger</td>
+        </tr>
+        <tr>
+            <td>TRST</td>
+            <td>TrustCoin</td>
+        </tr>
+        <tr>
+            <td>TRUMP</td>
+            <td>TrumpCoin</td>
+        </tr>
+        <tr>
+            <td>TRX</td>
+            <td>Tronix</td>
+        </tr>
+        <tr>
+            <td>UBQ</td>
+            <td>Ubiq</td>
+        </tr>
+        <tr>
+            <td>UNO</td>
+            <td>Unobtanium</td>
+        </tr>
+        <tr>
+            <td>UNRC</td>
+            <td>UniversalRoyalCoin</td>
+        </tr>
+        <tr>
+            <td>UQC</td>
+            <td>Uquid Coin</td>
+        </tr>
+        <tr>
+            <td>USDT</td>
+            <td>Tether</td>
+        </tr>
+        <tr>
+            <td>UTK</td>
+            <td>Utrust</td>
+        </tr>
+        <tr>
+            <td>UTT</td>
+            <td>United Traders Token</td>
+        </tr>
+        <tr>
+            <td>VEE</td>
+            <td>BLOCKv</td>
+        </tr>
+        <tr>
+            <td>VEN</td>
+            <td>Vechain</td>
+        </tr>
+        <tr>
+            <td>VERI</td>
+            <td>Veritaseum</td>
+        </tr>
+        <tr>
+            <td>VIA</td>
+            <td>ViaCoin</td>
+        </tr>
+        <tr>
+            <td>VIB</td>
+            <td>Viberate</td>
+        </tr>
+        <tr>
+            <td>VIBE</td>
+            <td>VIBEHub</td>
+        </tr>
+        <tr>
+            <td>VOISE</td>
+            <td>Voise</td>
+        </tr>
+        <tr>
+            <td>VOX</td>
+            <td>Voxels</td>
+        </tr>
+        <tr>
+            <td>VRS</td>
+            <td>Veros</td>
+        </tr>
+        <tr>
+            <td>VTC</td>
+            <td>VertCoin</td>
+        </tr>
+        <tr>
+            <td>VUC</td>
+            <td>Virta Unique Coin</td>
+        </tr>
+        <tr>
+            <td>WABI</td>
+            <td>WaBi</td>
+        </tr>
+        <tr>
+            <td>WAVES</td>
+            <td>Waves</td>
+        </tr>
+        <tr>
+            <td>WAX</td>
+            <td>Worldwide Asset eXchange</td>
+        </tr>
+        <tr>
+            <td>WC</td>
+            <td>WhiteCoin</td>
+        </tr>
+        <tr>
+            <td>WGR</td>
+            <td>Wagerr</td>
+        </tr>
+        <tr>
+            <td>WINGS</td>
+            <td>Wings DAO</td>
+        </tr>
+        <tr>
+            <td>WLK</td>
+            <td>Wolk</td>
+        </tr>
+        <tr>
+            <td>WOP</td>
+            <td>WorldPay</td>
+        </tr>
+        <tr>
+            <td>WPR</td>
+            <td>WePower</td>
+        </tr>
+        <tr>
+            <td>WRC</td>
+            <td>Worldcore</td>
+        </tr>
+        <tr>
+            <td>WTC</td>
+            <td>Waltonchain</td>
+        </tr>
+        <tr>
+            <td>XAUR</td>
+            <td>Xaurum</td>
+        </tr>
+        <tr>
+            <td>XBP</td>
+            <td>Black Pearl Coin</td>
+        </tr>
+        <tr>
+            <td>XBY</td>
+            <td>XtraBYtes</td>
+        </tr>
+        <tr>
+            <td>XCP</td>
+            <td>CounterParty</td>
+        </tr>
+        <tr>
+            <td>XCXT</td>
+            <td>CoinonatX</td>
+        </tr>
+        <tr>
+            <td>XDN</td>
+            <td>DigitalNote</td>
+        </tr>
+        <tr>
+            <td>XEM</td>
+            <td>NEM</td>
+        </tr>
+        <tr>
+            <td>XGB</td>
+            <td>GoldenBird</td>
+        </tr>
+        <tr>
+            <td>XHI</td>
+            <td>HiCoin</td>
+        </tr>
+        <tr>
+            <td>XID</td>
+            <td>Sphre AIR</td>
+        </tr>
+        <tr>
+            <td>XLM</td>
+            <td>Stellar</td>
+        </tr>
+        <tr>
+            <td>XMR</td>
+            <td>Monero</td>
+        </tr>
+        <tr>
+            <td>XNC</td>
+            <td>XenCoin</td>
+        </tr>
+        <tr>
+            <td>XRB</td>
+            <td>Nano</td>
+        </tr>
+        <tr>
+            <td>XRP</td>
+            <td>Ripple</td>
+        </tr>
+        <tr>
+            <td>XTO</td>
+            <td>Tao</td>
+        </tr>
+        <tr>
+            <td>XTZ</td>
+            <td>Tezos</td>
+        </tr>
+        <tr>
+            <td>XUC</td>
+            <td>Exchange Union</td>
+        </tr>
+        <tr>
+            <td>XVG</td>
+            <td>Verge</td>
+        </tr>
+        <tr>
+            <td>XZC</td>
+            <td>ZCoin</td>
+        </tr>
+        <tr>
+            <td>YEE</td>
+            <td>Yee</td>
+        </tr>
+        <tr>
+            <td>YOC</td>
+            <td>YoCoin</td>
+        </tr>
+        <tr>
+            <td>YOYOW</td>
+            <td>Yoyow</td>
+        </tr>
+        <tr>
+            <td>ZBC</td>
+            <td>Zilbercoin</td>
+        </tr>
+        <tr>
+            <td>ZCL</td>
+            <td>ZClassic</td>
+        </tr>
+        <tr>
+            <td>ZEC</td>
+            <td>ZCash</td>
+        </tr>
+        <tr>
+            <td>ZEN</td>
+            <td>ZenCash</td>
+        </tr>
+        <tr>
+            <td>ZIL</td>
+            <td>Zilliqa</td>
+        </tr>
+        <tr>
+            <td>ZNY</td>
+            <td>BitZeny</td>
+        </tr>
+        <tr>
+            <td>ZRX</td>
+            <td>0x</td>
+        </tr>
+        <tr>
+            <td>ZSC</td>
+            <td>Zeusshield</td>
+        </tr>
+                 </tbody>
+              </table>
+            </body>
+<script src="index.js"></script>
+</html>
