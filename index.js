@@ -19,13 +19,16 @@ function giveResult() {
 			.then((res) => res.json()) // parse response as JSON
 			.then((data) => {
 			
-				console.log(Object.values(data.rates))
-				
-				document.querySelector("h2").innerHTML= data.rates[this.token]
-				
+				let val  = Object.values(data.rates)
+				if(token==="" || currency ===""){
+					console.log(`error ${err}`)
+				}else{
+					console.log(`On ${daste},1 ${token} = ${val} ${currency}`);
+				document.querySelector("#return").innerHTML= `On ${daste},1 ${token} = ${val} ${currency.toUpperCase()}`
+				}
 			})
 			.catch((err) => {
 				console.log(`error ${err}`);
 			});
 	
-		}values
+		}
