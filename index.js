@@ -14,7 +14,7 @@ function giveResult() {
 
 	
 		fetch(
-			`http://api.coinlayer.com/api/${daste}?access_key=${api_key}&target=${currency}&symbols=${token} `
+			`https://api.coinlayer.com/api/${daste}?access_key=${api_key}&target=${currency}&symbols=${token} `
 		)
 			.then((res) => res.json()) // parse response as JSON
 			.then((data) => {
